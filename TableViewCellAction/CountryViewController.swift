@@ -18,8 +18,8 @@ class CountryViewController: UIViewController {
     var country:Country!
     override func viewDidLoad() {
         super.viewDidLoad()
-        countryLbl.text = country.name.capitalized
-        capitalLbl.text = country.capital.capitalized
+        countryLbl.text = "Country : \(country.name.capitalized)"
+        capitalLbl.text = "Capital : \(country.capital.capitalized)"
         imageView.image = country.image
     }
 
